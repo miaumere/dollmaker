@@ -1,0 +1,9 @@
+@import "../../../variables.scss";
+.character-preview {
+  height: 350px;
+  width: $char-preview-width;
+
+  background: white;
+
+  @include primary-border;
+}

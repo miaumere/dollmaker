@@ -3,34 +3,26 @@
 .option-buttons-container {
   display: flex;
 
-  margin: 0 1rem;
+  max-width: $char-preview-width;
+
+  margin-top: 1rem;
 }
 
 .option-button {
-  margin-bottom: -1px;
   @include primary-border;
   @include main-font;
 
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  margin: 0 0.25rem;
 
   background: $primary-color;
 
   &--active {
-    border-bottom: none;
-
-    color: $text-primary-color;
     background: $secondary-color;
   }
 }
 
 .items-container {
-  min-height: 100px;
-  width: 650px;
-
-  padding: 1rem;
+  width: 50px;
 
   background: $secondary-color;
-
-  @include primary-border;
 }

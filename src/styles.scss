@@ -1,0 +1,14 @@
+@import "~@csstools/normalize.css";
+@import "/src/variables.scss";
+
+@font-face {
+  font-family: VT323-Regular;
+  src: url("../src/assets/fonts/VT323-Regular.ttf") format("truetype");
+}
+
+html {
+  background: $main-background-color;
+
+  background-image: url("http://elouai.com/valentine/img/02acc/0020.gif");
+  background-repeat: repeat;
+}

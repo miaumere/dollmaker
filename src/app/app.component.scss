@@ -1,0 +1,13 @@
+@import "../variables.scss";
+
+.dollmaker {
+  @include primary-border;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  margin-top: 25px;
+  padding: 1rem;
+
+  background: $secondary-background-color;
+}

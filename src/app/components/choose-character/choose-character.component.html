@@ -3,10 +3,8 @@
     *ngFor="let option of options"
     class="option-button"
     (click)="setChosenOption(option)"
-    [ngClass]="{ 'option-button--active': option === chosenOption }"
+    [ngClass]="{ 'option-button--active': option === chosenCharacter }"
   >
     {{ option }}
   </button>
 </div>
-
-<div class="items-container">options for: {{ chosenOption }}</div>

@@ -1,1 +1,18 @@
-$test: red;
+$primary-color: #f8d969;
+$secondary-color: white;
+$text-primary-color: black;
+
+$main-background-color: #d2e4ff;
+$secondary-background-color: #89a5d6;
+
+$char-preview-width: 250px;
+$global-border-radius: 5px;
+
+@mixin main-font {
+  font-family: VT323-Regular;
+}
+
+@mixin primary-border {
+  border: 1px solid $text-primary-color;
+  border-radius: $global-border-radius;
+}
