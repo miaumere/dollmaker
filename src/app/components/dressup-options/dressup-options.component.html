@@ -1,0 +1,12 @@
+<div class="option-buttons-container">
+  <button
+    *ngFor="let option of options"
+    class="option-button"
+    (click)="setChosenOption(option)"
+    [ngClass]="{ 'option-button--active': true }"
+  >
+    {{ option }}
+  </button>
+</div>
+
+<div class="items-container">options for: {{ chosenOption }}</div>
