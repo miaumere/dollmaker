@@ -34,3 +34,13 @@
 
   @include primary-border;
 }
+
+// test
+
+.hide {
+  display: none;
+}
+
+.drag-over {
+  border: dashed 3px red;
+}
