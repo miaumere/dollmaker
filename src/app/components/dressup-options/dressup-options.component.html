@@ -9,7 +9,7 @@
   </button>
 </div>
 
-<div class="items-container">
+<!-- <div class="items-container">
   options for: {{ chosenOption }}
   <div
     (dragstart)="handleDragstart($event)"
@@ -26,4 +26,27 @@
   (dragover)="dragOver($event)"
   (dragleave)="dragLeave($event)"
   (drop)="drop($event)"
-></div>
+></div> -->
+
+<div class="items-container">
+  options for: {{ chosenOption }}
+  <div
+    style="background: red; height: 50px; width: 50px"
+    id="test"
+    class="draggable"
+  ></div>
+  <div
+    class="draggable"
+    [ngStyle]="{
+      'background-image': 'url(' + 'https://en.js.cx/clipart/ball.svg' + ')'
+    }"
+  ></div>
+
+  <div
+    class="draggable"
+    [ngStyle]="{
+      'background-image': 'url(' + 'https://svgsilh.com/svg/145232.svg' + ')'
+    }"
+  ></div>
+</div>
+<div id="app"></div>
