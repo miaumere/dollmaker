@@ -7,8 +7,15 @@
 }
 
 html {
+  display: flex;
+  justify-content: center;
+
   background: $main-background-color;
 
   background-image: url("http://elouai.com/valentine/img/02acc/0020.gif");
   background-repeat: repeat;
+
+  cursor: url("https://i.imgur.com/wVMgsDk.png"), auto;
 }
+
+// cursor from: http://kawaiiness.net/cursors.php

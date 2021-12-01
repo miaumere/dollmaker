@@ -3,6 +3,8 @@
 .dollmaker {
   @include primary-border;
 
+  width: 835px; //FIXME
+
   display: flex;
   justify-content: space-evenly;
 

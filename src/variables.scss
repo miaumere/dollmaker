@@ -1,9 +1,10 @@
-$primary-color: #f8d969;
-$secondary-color: white;
-$text-primary-color: black;
+$text-primary-color: rgb(50, 69, 133);
 
-$main-background-color: #d2e4ff;
-$secondary-background-color: #89a5d6;
+$main-background-color: #c2dce6;
+$secondary-background-color: darken($main-background-color, 20%);
+
+$primary-color: darken($main-background-color, 5%);
+$secondary-color: lighten($main-background-color, 5%);
 
 $char-preview-width: 250px;
 $global-border-radius: 5px;

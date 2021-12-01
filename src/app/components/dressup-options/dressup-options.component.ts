@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import html2canvas from 'html2canvas';
 import {
   DressupCategory,
   DressupCategoryString,
@@ -29,5 +30,15 @@ export class DressupOptionsComponent implements OnInit {
 
   setChosenOption(option: DressupCategoryString): void {
     this.chosenOption = option;
+  }
+
+  exportImage() {
+    html2canvas(document.querySelector('#capture') as any).then((canvas) => {
+      const link = document.createElement('a');
+
+      link.download = 'filename.png';
+      link.href = canvas.toDataURL();
+      link.click();
+    });
   }
 }
