@@ -34,25 +34,3 @@
 
   @include primary-border;
 }
-
-// test
-
-.hide {
-  display: none;
-}
-
-.drag-over {
-  border: dashed 3px red;
-}
-
-.draggable {
-  position: absolute;
-  cursor: move;
-  width: 32px;
-  height: 32px;
-  left: 90px;
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

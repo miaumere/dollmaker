@@ -1,38 +1,33 @@
 import { Component, OnInit } from '@angular/core';
 import {
-  fromEvent,
-  switchMap,
-  map,
-  takeUntil,
-  last,
-  combineLatest,
-  tap,
-} from 'rxjs';
+  DressupCategory,
+  DressupCategoryString,
+} from 'src/app/models/dressup-category.enum';
+import { DressupItem } from 'src/app/models/dressup-item.model';
+import { Enum } from 'src/utils/enum.utils';
 
-type Option = 'top' | 'bottom' | 'shoes' | 'hair' | 'accessories';
 @Component({
   selector: 'app-dressup-options',
   templateUrl: './dressup-options.component.html',
   styleUrls: ['./dressup-options.component.scss'],
 })
 export class DressupOptionsComponent implements OnInit {
-  readonly options: Option[] = [
-    'top',
-    'bottom',
-    'shoes',
-    'hair',
-    'accessories',
-  ];
+  readonly DressupCategory = DressupCategory;
+  readonly DressupCategoriesValues = Enum.GetEnumValues(DressupCategory);
 
-  chosenOption: Option = 'top';
+  chosenOption: DressupCategoryString = 'Top';
   isDown: boolean = false;
   offset = [0, 0];
 
+  dressupItems: DressupItem[] = [];
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // this.dressupItems = [{}];
+  }
 
-  setChosenOption(option: Option): void {
+  setChosenOption(option: DressupCategoryString): void {
     this.chosenOption = option;
   }
 }

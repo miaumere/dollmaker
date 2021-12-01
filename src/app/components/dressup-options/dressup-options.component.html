@@ -1,12 +1,13 @@
 <div class="option-buttons-container">
-  <button
-    *ngFor="let option of options"
-    class="option-button"
-    (click)="setChosenOption(option)"
-    [ngClass]="{ 'option-button--active': option === chosenOption }"
-  >
-    {{ option }}
-  </button>
+  <ng-container *ngFor="let option of DressupCategoriesValues">
+    <button
+      class="option-button"
+      (click)="setChosenOption(option)"
+      [ngClass]="{ 'option-button--active': option === chosenOption }"
+    >
+      {{ option }}
+    </button>
+  </ng-container>
 </div>
 
 <div class="items-container">
