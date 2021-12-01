@@ -9,44 +9,15 @@
   </button>
 </div>
 
-<!-- <div class="items-container">
-  options for: {{ chosenOption }}
-  <div
-    (dragstart)="handleDragstart($event)"
-    style="background: red; height: 50px; width: 50px"
-    id="test"
-    [draggable]="true"
-  ></div>
-  <img src="https://en.js.cx/clipart/ball.svg" id="ball" />
-</div>
-
-<div
-  style="background: white; height: 150px; width: 150px"
-  (dragenter)="dragEnter($event)"
-  (dragover)="dragOver($event)"
-  (dragleave)="dragLeave($event)"
-  (drop)="drop($event)"
-></div> -->
-
 <div class="items-container">
   options for: {{ chosenOption }}
-  <div
-    style="background: red; height: 50px; width: 50px"
-    id="test"
-    class="draggable"
-  ></div>
-  <div
-    class="draggable"
-    [ngStyle]="{
-      'background-image': 'url(' + 'https://en.js.cx/clipart/ball.svg' + ')'
-    }"
-  ></div>
+  <div cdkDrag style="background: red; height: 50px; width: 50px"></div>
 
-  <div
-    class="draggable"
-    [ngStyle]="{
-      'background-image': 'url(' + 'https://svgsilh.com/svg/145232.svg' + ')'
-    }"
-  ></div>
+  <img cdkDrag src="https://en.js.cx/clipart/ball.svg" />
+  <img
+    cdkDrag
+    src="https://svgsilh.com/svg/145232.svg"
+    style="height: 50px; width: 50px"
+  />
 </div>
 <div id="app"></div>
