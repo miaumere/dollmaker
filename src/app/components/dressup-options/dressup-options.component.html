@@ -13,14 +13,28 @@
 
 <div class="items-container">
   options for: {{ chosenOption }}
-  <div cdkDrag style="background: red; height: 50px; width: 50px"></div>
+  <!-- <div cdkDrag style="background: red; height: 50px; width: 50px"></div>
+
+  <img cdkDrag src="https://en.js.cx/clipart/ball.svg" /> -->
+
+  <!-- <div draggable="true"> -->
 
   <img cdkDrag src="https://en.js.cx/clipart/ball.svg" />
+
   <img
-    cdkDrag
+    draggable="true"
+    src="https://www.publicdomainpictures.net/pictures/130000/velka/red-box-background.jpg"
+    class="test-item"
+    style="height: 50px; width: 50px"
+  />
+
+  <img
+    draggable="true"
+    class="test-item"
     src="https://svgsilh.com/svg/145232.svg"
     style="height: 50px; width: 50px"
   />
+  <!-- </div> -->
 </div>
 <div id="app"></div>
 
@@ -29,3 +43,5 @@
 </div>
 
 <button (click)="exportImage()">ssssssssssssss</button>
+
+<img id="hidden-placeholder-image" style="opacity: 0" />
