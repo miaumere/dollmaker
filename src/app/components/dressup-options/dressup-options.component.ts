@@ -102,9 +102,6 @@ export class DressupOptionsComponent implements OnInit, AfterViewInit {
     dragEvent: DragEvent,
     offsets: Offsets
   ) {
-    // element.style.transform = `translate3d(${
-    //   dragEvent.x - offsets.offsetX
-    // }px, ${dragEvent.y - offsets.offsetY}px, 0px)`;
     element.style.top = `${dragEvent.y - offsets.offsetY}px`;
     element.style.left = `${dragEvent.x - offsets.offsetX}px`;
   }
